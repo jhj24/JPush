@@ -67,9 +67,9 @@ public class JPushBroadcastReceiver extends BroadcastReceiver {
         String EXTRA_EXTRA = bundle.getString(JPushInterface.EXTRA_EXTRA);
         PushData pushData = new Gson().fromJson(EXTRA_EXTRA, PushData.class);
         PushEnum pushEnum = null;
-        pushEnum = PushEnum.valueOf(pushData.type);
         String type = "-1";
         try {
+            pushEnum = PushEnum.valueOf(pushData.type);
             if (pushData.data != null) {
                 pushData.data = pushData.data.replace("&quot;", "\"");
             }
