@@ -20,7 +20,7 @@ android {
 
         manifestPlaceholders = [
                 JPUSH_PKGNAME : applicationId,
-                JPUSH_APPKEY : "bf6b9fb37f1cd64ef457901c", //JPush 上注册的包名对应的 Appkey.
+                JPUSH_APPKEY : "c006865cb95d172d42b296cf", //JPush 上注册的包名对应的 Appkey.
                 JPUSH_CHANNEL : "developer-default", //暂时填写默认值即可.
         ]
     }
